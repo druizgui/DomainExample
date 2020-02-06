@@ -1,19 +1,20 @@
-﻿namespace AdventureWorks.Data
+﻿// -----------------------------------------------------------------
+// <copyright>Copyright (C) 2020, David Ruiz.</copyright>
+// Licensed under the Apache License, Version 2.0.
+// You may not use this file except in compliance with the License:
+// http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Software is distributed on an "AS IS", WITHOUT WARRANTIES
+// OR CONDITIONS OF ANY KIND, either express or implied.
+// -----------------------------------------------------------------
+
+namespace AdventureWorks.Data
 {
     using AdventureWorks.Dom;
     using Microsoft.EntityFrameworkCore;
 
     public partial class AdventureWorksContext : DbContext
     {
-        public AdventureWorksContext()
-        {
-        }
-
-        public AdventureWorksContext(DbContextOptions<AdventureWorksContext> options)
-            : base(options)
-        {
-        }
-
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<AddressType> AddressType { get; set; }
         public virtual DbSet<AwbuildVersion> AwbuildVersion { get; set; }
@@ -103,6 +104,15 @@
         public virtual DbSet<Vendor> Vendor { get; set; }
         public virtual DbSet<WorkOrder> WorkOrder { get; set; }
         public virtual DbSet<WorkOrderRouting> WorkOrderRouting { get; set; }
+
+        public AdventureWorksContext()
+        {
+        }
+
+        public AdventureWorksContext(DbContextOptions<AdventureWorksContext> options)
+            : base(options)
+        {
+        }
 
         // Unable to generate entity type for table 'Production.Document'. Please see the warning messages.
         // Unable to generate entity type for table 'Production.ProductDocument'. Please see the warning messages.

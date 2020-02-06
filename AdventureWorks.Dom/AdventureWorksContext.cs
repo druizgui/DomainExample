@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------
+// -----------------------------------------------------------------
 // <copyright>Copyright (C) 2020, David Ruiz.</copyright>
 // Licensed under the Apache License, Version 2.0.
 // You may not use this file except in compliance with the License:
@@ -8,15 +8,3 @@
 // OR CONDITIONS OF ANY KIND, either express or implied.
 // -----------------------------------------------------------------
 
-namespace AdventureWorks.Con
-{
-    using System;
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}

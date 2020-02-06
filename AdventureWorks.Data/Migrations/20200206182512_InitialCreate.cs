@@ -1,4 +1,14 @@
-﻿namespace AdventureWorks.Data.Migrations
+﻿// -----------------------------------------------------------------
+// <copyright>Copyright (C) 2020, David Ruiz.</copyright>
+// Licensed under the Apache License, Version 2.0.
+// You may not use this file except in compliance with the License:
+// http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Software is distributed on an "AS IS", WITHOUT WARRANTIES
+// OR CONDITIONS OF ANY KIND, either express or implied.
+// -----------------------------------------------------------------
+
+namespace AdventureWorks.Data.Migrations
 {
     using System;
     using Microsoft.EntityFrameworkCore.Migrations;
@@ -2208,11 +2218,11 @@
                 column: "UnitMeasureCode");
 
             migrationBuilder.CreateIndex(
-                name: "AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate",
-                schema: "Production",
-                table: "BillOfMaterials",
-                columns: new[] { "ProductAssemblyID", "ComponentID", "StartDate" },
-                unique: true)
+                    name: "AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate",
+                    schema: "Production",
+                    table: "BillOfMaterials",
+                    columns: new[] { "ProductAssemblyID", "ComponentID", "StartDate" },
+                    unique: true)
                 .Annotation("SqlServer:Clustered", true);
 
             migrationBuilder.CreateIndex(

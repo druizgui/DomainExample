@@ -1,52 +1,54 @@
-﻿namespace AdventureWorks.Dom
+﻿// -----------------------------------------------------------------
+// <copyright>Copyright (C) 2020, David Ruiz.</copyright>
+// Licensed under the Apache License, Version 2.0.
+// You may not use this file except in compliance with the License:
+// http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Software is distributed on an "AS IS", WITHOUT WARRANTIES
+// OR CONDITIONS OF ANY KIND, either express or implied.
+// -----------------------------------------------------------------
+
+namespace AdventureWorks.Dom
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
     public partial class VEmployee
     {
-        [Column("BusinessEntityID")]
-        public int BusinessEntityId { get; set; }
-        [StringLength(8)]
-        public string Title { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string FirstName { get; set; }
-        [StringLength(50)]
-        public string MiddleName { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string LastName { get; set; }
-        [StringLength(10)]
-        public string Suffix { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string JobTitle { get; set; }
-        [StringLength(25)]
-        public string PhoneNumber { get; set; }
-        [StringLength(50)]
-        public string PhoneNumberType { get; set; }
-        [StringLength(50)]
-        public string EmailAddress { get; set; }
+        [Column("BusinessEntityID")] public int BusinessEntityId { get; set; }
+
+        [StringLength(8)] public string Title { get; set; }
+
+        [Required] [StringLength(50)] public string FirstName { get; set; }
+
+        [StringLength(50)] public string MiddleName { get; set; }
+
+        [Required] [StringLength(50)] public string LastName { get; set; }
+
+        [StringLength(10)] public string Suffix { get; set; }
+
+        [Required] [StringLength(50)] public string JobTitle { get; set; }
+
+        [StringLength(25)] public string PhoneNumber { get; set; }
+
+        [StringLength(50)] public string PhoneNumberType { get; set; }
+
+        [StringLength(50)] public string EmailAddress { get; set; }
+
         public int EmailPromotion { get; set; }
-        [Required]
-        [StringLength(60)]
-        public string AddressLine1 { get; set; }
-        [StringLength(60)]
-        public string AddressLine2 { get; set; }
-        [Required]
-        [StringLength(30)]
-        public string City { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string StateProvinceName { get; set; }
-        [Required]
-        [StringLength(15)]
-        public string PostalCode { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string CountryRegionName { get; set; }
-        [Column(TypeName = "xml")]
-        public string AdditionalContactInfo { get; set; }
+
+        [Required] [StringLength(60)] public string AddressLine1 { get; set; }
+
+        [StringLength(60)] public string AddressLine2 { get; set; }
+
+        [Required] [StringLength(30)] public string City { get; set; }
+
+        [Required] [StringLength(50)] public string StateProvinceName { get; set; }
+
+        [Required] [StringLength(15)] public string PostalCode { get; set; }
+
+        [Required] [StringLength(50)] public string CountryRegionName { get; set; }
+
+        [Column(TypeName = "xml")] public string AdditionalContactInfo { get; set; }
     }
 }
