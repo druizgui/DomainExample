@@ -1,0 +1,3 @@
+﻿Scaffold-DbContext 'Data Source=.;Initial Catalog=AdventureWorks;trusted_connection=true;' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Dom -DataAnnotations -force
+EntityFrameworkCore\Add-Migration InitialCreate
+EntityFrameworkCore\update-database
